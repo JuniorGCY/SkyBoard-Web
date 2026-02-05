@@ -42,7 +42,7 @@ const IssTracker: React.FC = () => {
             {data && (
               <>
                 <Maps lat={data.latitude} lng={data.longitude} visibility={data.visibility} />
-                <div>
+                <div className="IssTracker-informations">
                     <p>Latitude: {data.latitude.toFixed(4)}</p>
                     <p>Longitude: {data.longitude.toFixed(4)}</p>
                     <p>Velocidade: {Math.round(data.velocity)} km/h</p>
