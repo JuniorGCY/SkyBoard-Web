@@ -84,25 +84,24 @@ function Community()  {
 
             <div className='community-header'>
                <h1 style={{color: ' #FFD700'}}>Comunidade</h1>
-               <h1 style={{marginTop: 20, fontSize: 45}}>Junte-se a milhares de <br /></h1>
-               <h1 style={{color: ' #FFD700', fontSize: 45}}>exploradores de cosmos</h1>
+               <h2>Junte-se a milhares de <br /></h2>
+               <h2>exploradores de cosmos</h2>
             </div>
 
             <div className='community-container-card'>
                 {feedbackList.map((item) => (
-                    <div className='community-cards'>
+                    <div key={item.id} className='community-cards'>
                         <div className='community-icon-box'>{item.icon}</div>
                         <p>{item.feedback}</p>
-
                         <h2>{item.userName}</h2>
-                        <h3>{item.userCategory}</h3>
+                        <p>{item.userCategory}</p>
                     </div>
                 ))}
             </div>
 
             <div className='community-analitcs-card'>
                 {analitcsList.map((item) => (
-                    <div className='community-result-card'>
+                    <div key={item.id} className='community-result-card'>
                         <div className='community-icon-box-2'>{item.icon2}</div>
                         <h1>{item.resultNumber}K+</h1>
                         <p>{item.resultCategory}</p>

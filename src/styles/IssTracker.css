@@ -12,3 +12,22 @@
     grid-template-columns: 1fr 1fr;
     gap: 24px;
 }
+
+@media (max-width: 600px) {
+    .IssTracker-container {
+        padding-block: 40px;
+        padding-inline: 10px;
+    }
+    
+    .IssTracker-container p {
+        font-size: 0.6rem;
+    }
+
+    .IssTracker-informations {
+        margin-block: 20px;
+        margin-inline: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}

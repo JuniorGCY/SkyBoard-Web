@@ -12,7 +12,7 @@
 }
 
 body {
-  background: radial-gradient(at bottom, #04070d 100%, #29194a 0%);
+  background-image: linear-gradient(to bottom, #04070d, #0a1327);
   min-height: 100vh;
   overflow-x: hidden; 
 }
@@ -23,7 +23,7 @@ body {
   border-radius: 99px;
   background: transparent;
   box-shadow: 1744px 122px #FFF , 134px 1321px #FFF , 92px 859px #FFF, 1920px 400px #FFF;
-  animation: animStar 5s linear infinite;
+  animation: animStar 1s linear infinite;
 }
 
 .stars2 {
@@ -32,7 +32,7 @@ body {
   border-radius: 99px;
   background: transparent;
   box-shadow: 500px 1500px #FFF , 1000px 500px #FFF, 200px 800px #FFF;
-  animation: animStar 5s linear infinite;
+  animation: animStar 1s linear infinite;
 }
 
 @keyframes animStar {

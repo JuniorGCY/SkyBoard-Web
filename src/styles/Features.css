@@ -1,5 +1,5 @@
 .feature-container {
-    margin-inline: 100px;
+    margin-inline: 10px;
     margin-block: 100px;
 }
 
@@ -11,6 +11,7 @@
 .feature-header-content h1 {
     color: white;
     font-family: 'Orbitron', sans-serif;
+    font-size: var(--size-h1)
 }
 
 .feature-header-content b {
@@ -19,8 +20,9 @@
 
 .feature-header-content p {
     margin-top: 20px;
-    color: #999;
+    color: #ffffff;
     font-family: 'Inter', sans-serif;
+    font-size: var(--size-p);
 }
 
 .feature-card-container {
@@ -30,7 +32,6 @@
 }
 
 .feature-card {
-    background-color: rgba(19, 21, 38, 0.9);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     padding: 30px;
@@ -39,6 +40,7 @@
     align-items: flex-start;
     gap: 15px;
     transition: transform 0.5s ease;
+    background-image: linear-gradient(to left, #04070d, #0a1327);
 }
 
 .feature-card:hover {
@@ -58,17 +60,16 @@
 .feature-card h1 {
     color: white;
     margin: 0;
-    font-size: 1.2rem;
+    font-size: var(--size-h1);
     font-family: 'Orbitron', sans-serif;
 }
 
 .feature-card p {
     color: #a0a0a0;
-    font-size: 0.9rem;
-    line-height: 1.5;
     margin: 0;
     text-align: left;
     font-family: 'Inter', sans-serif;
+    font-size: var(--size-p);
 }
 
 .feature-example-feature {
@@ -82,6 +83,11 @@
     0 0 40px rgba(255, 215, 0, 0.3);
 }
 
+.feature-example-feature h1 {
+    font-size: var(--size-h1);
+    font-family: 'Orbitron', sans-serif;
+}
+
 .feature-example-feature button {
     background-color: #FFD700;
     margin-block: 30px;
@@ -89,4 +95,57 @@
     border-radius: 16px;
     color: black;
     font-family: 'Inter', sans-serif;
+}
+
+
+@media (max-width: 600px) {
+    .feature-card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding-block: 20px;
+        padding-inline: 20px;
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        white-space: nowrap;
+    }
+
+    .feature-icon-box {
+        font-size: 15px;
+        color: #FFD700;
+        background-color: rgba(255, 215, 0, 0.1);
+        padding: 10px 15px;
+        border-radius: 8px;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .feature-card {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0 auto;
+        width: 210px;
+        height: 190px;
+        white-space: normal;
+    }
+
+    .feature-card h1 {
+        font-size: 0.8rem;
+    }
+
+    .feature-card p {
+        font-size: 0.6rem;
+    }
+
+    .feature-example-feature button {
+        width: 150px;
+        height: 40px;
+        padding: 0;
+        font-size: 0.8rem;
+    }
 }

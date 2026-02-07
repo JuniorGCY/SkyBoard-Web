@@ -9,7 +9,7 @@ function Download() {
         <div className="download-container">
 
             <div className="download-icon">
-                <SmartphoneIcon sx={{fontSize: 40}}/>
+                <SmartphoneIcon sx={{fontSize: 60}}/>
             </div>
 
             <div className='download-text'>
@@ -41,7 +41,7 @@ function Download() {
 
             <div className='download-downloads-number'>
                 <StarIcon sx={{fontSize: 20, color: '#FFD700'}}/>
-                <h2 style={{fontSize: 18, color: '#999'}}>Mais de 10.000 downloads</h2>
+                <h2>Mais de 10.000 downloads</h2>
             </div>
         </div>
     )

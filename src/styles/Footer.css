@@ -9,6 +9,7 @@
 
 .footer-container h2 {
     font-family: 'Orbitron', sans-serif;
+    font-size: var(--size-h2);
 }
 
 .footer-container b {
@@ -31,4 +32,20 @@
     display: flex;
     align-items: center;
     font-size: 0.7rem;
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        font-size: 0.8rem;
+    }
+
+    .footer-copyrights h2 {
+        font-size: 0.7rem;
+    }
+
+    
 }

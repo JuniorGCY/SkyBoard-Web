@@ -1,11 +1,11 @@
-.hero-container{
+.hero-container {
     margin-top: 30px;
     margin-bottom: 100px;
 }
 
 .hero-container h1 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 4.5rem;
+    font-size: var(--size-h1);
     color: white;
     margin-bottom: 10px;
     text-shadow: 
@@ -14,9 +14,9 @@
 }
 
 .hero-container h2 {
-    font-size: 1.5rem;
     color: #FFD700;
     font-family: 'Inter', sans-serif;
+    font-size: var(--size-h2);
 }
 
 .hero-container b {
@@ -24,17 +24,26 @@
 }
 
 .hero-container p {
-    color: #999;
+    color: #ffffff;
     font-family: 'Inter', sans-serif;
+    font-size: var(--size-p);
 }
 
 .hero-container button {
-    width: 170px;
-    padding: 10px;
+    padding: 10px 20px;
     margin-top: 20px;
     background-color: #FFD700;
     color: black;
-    border-radius: 20px;
+    border-radius: 16px;
     text-align: center;
     font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 600px) {
+    .hero-container button {
+        width: 150px;
+        height: 40px;
+        padding: 0;
+        font-size: 0.8rem;
+    }
 }

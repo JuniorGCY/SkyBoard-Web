@@ -7,7 +7,7 @@ import Footer from './Pages/Footer'
 
 function App() {
   return (
-    <div>
+    <div className='container'>
       <div className='stars'></div>
       <div className='stars2'></div>
       <Hero />
@@ -15,8 +15,6 @@ function App() {
       <Community />
       <Download />
       <Footer />
-
-      
     </div>
   )
 }

@@ -1,10 +1,11 @@
 .download-container  {
-    margin-inline: 100px;
+    margin-inline: 30px;
     margin-block: 100px;
     border-radius: 8px;
     padding: 30px;
     background-color: rgba(19, 21, 38, 0.9);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    background-image: linear-gradient(to left, #04070d, #0a1327);
 }
 
 .download-container:hover {
@@ -26,13 +27,14 @@
 }
 
 .download-text h1 {
-    font-size: 3.0rem;
+    font-size: var(--size-h1);
     font-family: 'Orbitron', sans-serif;
 }
 
 .download-text p {
     margin-block: 15px;
     font-family: 'Inter', sans-serif;
+    font-size: var(--size-p);
 }
 
 .download-card-container {
@@ -41,6 +43,9 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+    width: auto;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .download-cards {
@@ -50,12 +55,14 @@
     align-items: center;
     justify-content: center;
     margin-block: 15px;
-    max-width: 290px;
+    min-width: 250px;
     gap: 15px;
     padding: 10px 25px;
     background-color: white;
     border-radius: 16px;
     transition: transform 0.3s ease;
+    flex: 0 1 auto;
+    
 }
 
 .download-cards:hover {
@@ -65,7 +72,7 @@
 
 .download-cards h2 {
     color: #444;
-    font-size: 1.0rem;
+    font-size: var(--size-h2);
     font-family: 'Inter', sans-serif;
 }
 
@@ -83,4 +90,49 @@
     justify-content: center;
     gap: 5px;
     font-family: 'Inter', sans-serif;
+}
+
+.download-downloads-number h2 {
+    font-size: var(--size-h2);
+    color: white;
+}
+
+
+
+@media (max-width: 600px) {
+    .download-card-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 2px;
+    }
+
+    .download-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .download-text p {
+        font-size: 0.8rem;
+    }
+
+    .download-icon {
+        display: inline-block;
+        margin: 0;
+        background-color: rgba(255, 215, 0, 0.1);
+        color: #FFD700;
+        border-radius: 16px;
+    }
+
+    .download-cards {
+        width: 70%;
+        max-width: 280px;
+    }
+
+    .download-cards h2 {
+        font-size: 0.6rem;
+    }
+
+    .download-cards span {
+        font-size: 0.8rem;
+    }
 }

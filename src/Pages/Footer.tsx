@@ -13,7 +13,7 @@ function Footer() {
             <div className='footer-links'>
                 <Link href="#" underline="hover" sx={{color: '#ccc'}}>Termos de Uso</Link>
                 <Link href="#" underline="hover" sx={{color: '#ccc'}}>Privacidade</Link>
-                <Link href="#" underline="hover" sx={{color: '#ccc'}}>Contato</Link>
+                <Link href="mailto:ejunior.mobiledev@gmail.com?subject=Contato%20via%20SkyBoard%20Web" underline="hover" sx={{color: '#ccc'}}>Contato</Link>
             </div>
 
             <div className='footer-copyrights'>
